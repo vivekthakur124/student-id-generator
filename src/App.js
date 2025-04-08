@@ -81,11 +81,11 @@ function App() {
         />
       </div>
 
-      {/* Preview Card */}
+      
       <div className={`preview ${template}`} ref={cardRef}>
         <div className="id-card-content">
           
-          {/* Photo */}
+          
           {student.photo && (
             <div className="photo-section">
               <img
@@ -95,7 +95,7 @@ function App() {
             </div>
           )}
 
-          {/* Student Info */}
+          
           <div className="info-section">
             <h2>ID Card Preview</h2>
             <p><strong>Name:</strong> {student.name}</p>
@@ -104,7 +104,7 @@ function App() {
             <p><strong>College:</strong> {student.college}</p>
           </div>
 
-          {/* QR Code */}
+          
           {student.name && student.roll && (
             <div className="qr-section">
               <QRCodeCanvas value={`${student.name} - ${student.roll}`} />
